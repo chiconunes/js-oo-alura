@@ -8,6 +8,16 @@ const user = {
         console.log(this.nome,this.email)
     }
 }
-user.exibirInfos()
-const exibir = user.exibirInfos
-exibir() // erro perde o contexto
+
+const admin  ={
+    nome : "Mariana",
+    email:"m@m.com",
+    role:"admin",
+    criarCurso(){
+        console.log('curso criado!')
+    }
+}
+
+Object.setPrototypeOf(admin,user)
+admin.criarCurso()
+admin.exibirInfos()
