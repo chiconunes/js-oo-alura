@@ -7,6 +7,7 @@ const user = {
     exibirInfos: function(){
         console.log(this.nome,this.email)
     }
-
-
 }
+user.exibirInfos()
+const exibir = user.exibirInfos
+exibir() // erro perde o contexto
