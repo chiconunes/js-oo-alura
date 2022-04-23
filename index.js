@@ -11,3 +11,4 @@ const novoAdmin = new Admin('Rodrigo','r@r.com','2021-0101')
 console.log(chalk.blue(novoAdmin.nome))
 novoAdmin.nome = 'Francisco Cardoso Nunes'
 console.log(chalk.blue(novoAdmin.nome))
+console.log(chalk.blue(novoAdmin.exibirInfos()))
